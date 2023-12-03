@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Instagram</title>
+  <!-- Enlaces a hojas de estilo, fuentes, o scripts adicionales van aquí -->
+  <script src="https://kit.fontawesome.com/c86c1489c6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar" "w-100" aria-label="Eleventh navbar example"></nav>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-2">
+        <i class="fa-brands fa-instagram fa-2xl"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-success btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Create a new post</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p><strong>Caption:</strong></p>
+                <div class="input-group mb-3">
+                  <div class="container">
+                    <div class="row-3 mb-3">
+                      <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="row-2">
+                      <button type="button" class="btn btn-outline-dark"><i
+                          class="fa-solid fa-camera fa-lg"></i></button>
+                      <button type="button" class="btn btn-outline-dark"><i
+                          class="fa-solid fa-location-dot fa-lg"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Modal -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear fa-lg"></i>
+          <i class="fa-solid fa-caret-down fa-lg"></i>
+        </button>
+        <ul class="dropdown-menu mx-0 shadow" style="width: 175px;">
+          <li>
+            <a class="dropdown-item" href="#">
+              <svg class="bi" width="16" height="16">
+                <use xlink:href="#files"></use>
+              </svg>
+              Profile
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <svg class="bi" width="16" height="16">
+                <use xlink:href="#image-fill"></use>
+              </svg>
+              Accesibility
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <svg class="bi" width="16" height="16">
+                <use xlink:href="#film"></use>
+              </svg>
+              Privacy and data
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item text-danger" href="#">
+              <svg class="bi" width="16" height="16">
+                <use xlink:href="#trash"></use>
+              </svg>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs nav justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+            class="fa-solid fa-table-cells fa-xl"></i></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+            class="fa-regular fa-square fa-xl"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <!-- Espacio separador -->
+        <div class="my-4"></div>
+        <!-- Fotos en cuadricula -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- 1 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-9/116722461_10223132438330135_7133985690910521385_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=68be17&_nc_ohc=Mkp_Ylv8aOMAX_Ub4wW&_nc_ht=scontent-mad1-1.xx&oh=00_AfCFp4INdnfOi-TjSMEZlPKY0UaaieVD5eESyHgnlsdzsg&oe=6593ECA1"
+              class="card-img-top img-fluid img-square">
+          </div>
+          <!-- 2 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-9/54519917_10218364764781276_1823840884240678912_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=68be17&_nc_ohc=2w3VWYAbJ3sAX81b6L4&_nc_ht=scontent-mad1-1.xx&oh=00_AfAwL-F3GH-e0RCBWRMmz5oFCvTRaWzXyItbsxlFx1T14g&oe=6593DAA0"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 3 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad2-1.xx.fbcdn.net/v/t31.18172-8/17880148_10212533693048127_6915550841781823153_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=_RoarcXteJ0AX9VX8Yp&_nc_ht=scontent-mad2-1.xx&oh=00_AfCnxyPQ-xafLdQWYuxYfEfMCXYPcudbRp3AT7slZJUmXg&oe=6593DC40"
+              class="card-img-top img-fluid img-square">
+          </div>
+          <!-- 4 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/14237738_10209238067281621_3807315152532976525_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=XLs4UT2tKOEAX9Ckdh8&_nc_ht=scontent-mad1-1.xx&oh=00_AfBbQpluyCEahtc6VMKsOi1721fO4Ug5ppTMx_2LWT0DmA&oe=6593CA95"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 5 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad2-1.xx.fbcdn.net/v/t1.18169-9/11221964_10205476316160165_2403337616118694225_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=908e45&_nc_ohc=CinkGBYVFNQAX-qwTqb&_nc_ht=scontent-mad2-1.xx&oh=00_AfDvTNaKDSYnE6vs7uqojVwIYl1bZu0rEYbm8-LD6YiBiA&oe=6593E149"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 6 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad2-1.xx.fbcdn.net/v/t1.18169-9/11114095_10206586244805638_8929998904803409936_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=ON0d005ua1kAX_NdwpM&_nc_ht=scontent-mad2-1.xx&oh=00_AfDO1IMHsjpEcNOp3myNDZLOy82cp5dBeKoJ0UCk49OQjA&oe=6593C94A"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 7 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/11205957_857444407637278_3417967358579319452_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=908e45&_nc_ohc=w2lrGEjf0aAAX9NjiKp&_nc_ht=scontent-mad1-1.xx&oh=00_AfDG_JVeNyfLp16UbMWI8S9husTRHs1YKRXRovro9IWmMw&oe=6593C148"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 8 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/10944866_10206357157394876_6940703911845827858_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=bq_3rlwJuuAAX9hqbfH&_nc_ht=scontent-mad1-1.xx&oh=00_AfBuCFBCyODvgkqxnWrtyMnHX9oobGMa9aKPt3RF_pOgxQ&oe=6593CDA9"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+          <!-- 9 foto -->
+          <div class="img-fluid rounded">
+            <img
+              src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/10957710_815041268544259_213322003126752314_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=908e45&_nc_ohc=1rY3I7Y4EC8AX92TqH8&_nc_ht=scontent-mad1-1.xx&oh=00_AfAiyUn9cZ3vp0WPKv0T_pLUa-MNsyDPJevnD8xtP8Jl3w&oe=6593EAFC"
+              class="card-img-top img-fluid img-square" alt="Imagen cuadrada">
+          </div>
+        </div>
+      </div>
+      <!-- Fin fotos cuadricula/primera pestaña -->
+      <!-- Comienzo segunda pestaña -->
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <!-- Primera foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-9/116722461_10223132438330135_7133985690910521385_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=68be17&_nc_ohc=Mkp_Ylv8aOMAX_Ub4wW&_nc_ht=scontent-mad1-1.xx&oh=00_AfCFp4INdnfOi-TjSMEZlPKY0UaaieVD5eESyHgnlsdzsg&oe=6593ECA1"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 2 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-9/54519917_10218364764781276_1823840884240678912_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=68be17&_nc_ohc=2w3VWYAbJ3sAX81b6L4&_nc_ht=scontent-mad1-1.xx&oh=00_AfAwL-F3GH-e0RCBWRMmz5oFCvTRaWzXyItbsxlFx1T14g&oe=6593DAA0"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 3 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad2-1.xx.fbcdn.net/v/t31.18172-8/17880148_10212533693048127_6915550841781823153_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=_RoarcXteJ0AX9VX8Yp&_nc_ht=scontent-mad2-1.xx&oh=00_AfCnxyPQ-xafLdQWYuxYfEfMCXYPcudbRp3AT7slZJUmXg&oe=6593DC40"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 4 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/14237738_10209238067281621_3807315152532976525_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=XLs4UT2tKOEAX9Ckdh8&_nc_ht=scontent-mad1-1.xx&oh=00_AfBbQpluyCEahtc6VMKsOi1721fO4Ug5ppTMx_2LWT0DmA&oe=6593CA95"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 5 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad2-1.xx.fbcdn.net/v/t1.18169-9/11221964_10205476316160165_2403337616118694225_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=908e45&_nc_ohc=CinkGBYVFNQAX-qwTqb&_nc_ht=scontent-mad2-1.xx&oh=00_AfDvTNaKDSYnE6vs7uqojVwIYl1bZu0rEYbm8-LD6YiBiA&oe=6593E149"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 6 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad2-1.xx.fbcdn.net/v/t1.18169-9/11114095_10206586244805638_8929998904803409936_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=ON0d005ua1kAX_NdwpM&_nc_ht=scontent-mad2-1.xx&oh=00_AfDO1IMHsjpEcNOp3myNDZLOy82cp5dBeKoJ0UCk49OQjA&oe=6593C94A"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 7 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/11205957_857444407637278_3417967358579319452_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=908e45&_nc_ohc=w2lrGEjf0aAAX9NjiKp&_nc_ht=scontent-mad1-1.xx&oh=00_AfDG_JVeNyfLp16UbMWI8S9husTRHs1YKRXRovro9IWmMw&oe=6593C148"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 8 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/10944866_10206357157394876_6940703911845827858_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=bq_3rlwJuuAAX9hqbfH&_nc_ht=scontent-mad1-1.xx&oh=00_AfBuCFBCyODvgkqxnWrtyMnHX9oobGMa9aKPt3RF_pOgxQ&oe=6593CDA9"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- 9 foto -->
+        <div class="container my-4">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-start">
+                        <h5 class="card-title">Mis fotos de Instagram</h5>
+                      </div>
+                      <div class="col-md-auto"></div>
+                      <div class="col col-lg-2 text-end">
+                        <p class="card-text"><small class="text-body-secondary">03/06</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.18169-9/10957710_815041268544259_213322003126752314_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=908e45&_nc_ohc=1rY3I7Y4EC8AX92TqH8&_nc_ht=scontent-mad1-1.xx&oh=00_AfAiyUn9cZ3vp0WPKv0T_pLUa-MNsyDPJevnD8xtP8Jl3w&oe=6593EAFC"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2345678 Likes</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac congue neque.
+                    Donec aliquam lacus in diam viverra, id bibendum urna fermentum. Vivamus ultrices ante vel ante
+                    sagittis hendrerit. Donec sodales lectus vel finibus volutpat. Mauris eu maximus nisl. Fusce
+                    pulvinar ligula vitae laoreet sodales. Maecenas sollicitudin tristique ante ac hendrerit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <!-- fin foto -->
+      </div> <!-- Fin segunda pestaña -->
+    </div> <!-- Fin tabcontent -->
+    <!-- Fin pestañas -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
